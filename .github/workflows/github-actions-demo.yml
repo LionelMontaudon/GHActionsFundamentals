@@ -15,6 +15,15 @@ jobs:
     runs-on: unbuntu-latest
     steps:
       - run: |
-      echo "The jow was trigger by event: ${{ github.event_name }}"
-      echo "The name of your branch is ${{ github.ref }}" and your repository is ."
+        echo "The jow was trigger by event: ${{ github.event_name }}"
+        echo "The name of your branch is ${{ github.ref }} and your repository is ."
+
+      - name: Checkout
+        uses: ctions/checkout@v4
+
+      - name: list file in the repository
+        run: |
+          echo " the repo is ${{ github.repository }} "
+          tree
+        
       
