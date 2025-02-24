@@ -16,7 +16,8 @@ jobs:
     runs-on: unbuntu-latest
     steps:
       - run: |
-        echo "The jow was trigger by event: ${{ github.event_name }}"
+          echo "The job was trigger by event: ${{ github.event_name }}"
+          echo "Thename of your beanch is ${{ github.ref }}"
 
       - name: Checkout
         uses: ctions/checkout@v4
