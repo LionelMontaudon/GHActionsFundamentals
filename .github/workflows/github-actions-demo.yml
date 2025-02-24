@@ -19,7 +19,7 @@ jobs:
           echo "Thename of your beanch is ${{ github.ref }}"
 
       - name: Checkout
-        uses: ctions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: list file in the repository
         run: |
