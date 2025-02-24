@@ -11,8 +11,7 @@ on:
 
 jobs:
   Build:
-    name: Build
-    run-name: Build
+    name: Build   
     runs-on: unbuntu-latest
     steps:
       - run: |
