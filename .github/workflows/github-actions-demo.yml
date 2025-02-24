@@ -16,7 +16,6 @@ jobs:
     steps:
       - run: |
         echo "The jow was trigger by event: ${{ github.event_name }}"
-        echo "The name of your branch is ${{ github.ref }} and your repository is ."
 
       - name: Checkout
         uses: ctions/checkout@v4
