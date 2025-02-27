@@ -2,6 +2,7 @@ name: Test action with docker file
 on:
   push:
     paths: [ hello-world-docker-action/** ]
+    branches: main
   workflow_dispatch:
 
 jobs:
