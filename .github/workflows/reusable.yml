@@ -1,1 +1,13 @@
-
+name: Reusable workflow
+on:
+  workflow_call:
+    inputs:
+       who-to-greet:
+        description: 'A user passed from the caller workflow'
+        default: 'Wrold'
+        required: false
+        type: string
+jobs:
+  reusable-job:
+    runs-on: ubuntu-latest
+    run
