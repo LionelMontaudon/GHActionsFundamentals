@@ -18,8 +18,8 @@ jobs:
       - name: Just echo 
         run: echo "Hello ${{ inputs.who-to-greet }}"
       - name: Set time
-        id: time
+        id: timestep
         run: echo "time=$(date)" >> $GITHUB_OUTPUT
     outputs:
-      current-time: ${{ steps.time.outputs.time }}
+      current-time: ${{ steps.timestep.outputs.time }}
         
