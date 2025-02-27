@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 on: 
   push:
     branches: [main]
-    paths-ignore: [.github/**]
+    paths-ignore: [.github/**, hello-world-docker-action/**]
   pull_request:
     branches: [main]
   schedule:
